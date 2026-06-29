@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -363,6 +365,7 @@ select{resize:none;cursor:pointer;-webkit-appearance:none;background-image:url("
         <div class="sub-item" onclick="openTab('fnw-proposta','FNW · Proposta','#1a3a5c',this)"><div class="sub-dot" style="background:#1a3a5c"></div>Proposta</div>
         <div class="sub-item" onclick="openTab('fnw-contrato','FNW · Contrato','#1a3a5c',this)"><div class="sub-dot" style="background:#1a3a5c"></div>Contrato</div>
         <div class="sub-item" onclick="openTab('fnw-revisao','FNW · Revisão','#1a3a5c',this)"><div class="sub-dot" style="background:#1a3a5c"></div>Revisão</div>
+        <div class="sub-item" onclick="openTab('fnw-links','FNW · Ferramentas','#1a3a5c',this)"><div class="sub-dot" style="background:#185FA5"></div>Ferramentas FNW</div>
       </div>
     </div>
   </div>
@@ -399,6 +402,7 @@ select{resize:none;cursor:pointer;-webkit-appearance:none;background-image:url("
         <button class="rev-btn" id="tab-equil-btn" onclick="showTabela('equil')">Equação de Equilíbrio</button>
         <button class="rev-btn" id="tab-gatilhos-btn" onclick="showTabela('gatilhos')">Gatilhos Comportamentais</button>
         <button class="rev-btn" id="tab-script-btn" onclick="showTabela('script')">Script Comercial</button>
+        <button class="rev-btn" id="tab-eco-btn" onclick="showTabela('eco')">Produtos do Ecossistema</button>
       </div>
 
       <!-- ABA: 9PMO 10 FASES -->
@@ -513,6 +517,86 @@ select{resize:none;cursor:pointer;-webkit-appearance:none;background-image:url("
           <p><strong>O que preocupa:</strong> a economicidade real depende do ticket médio atual. Se o negócio fatura R$ 30 mil/mês, R$ 7 mil é 23% da receita. A economia precisa vir de deixar de gastar R$ 10 mil/mês em consultorias avulsas.</p>
           <div class="hl amber"><strong>Gatilho contratual sugerido:</strong> "Se a assessoria não gerar ao menos R$ 8.500/mês em economia ou receita incremental, o mês seguinte tem cortesia de 50%."</div>
           <p><strong>Maior risco:</strong> subutilização — clientes pagam R$ 7k mas usam apenas 3 das 9 fases. Solução: incluir "uso mínimo garantido" (2 reuniões estratégicas/semana + 1 relatório de economicidade mensal).</p>
+        </div></div>
+      </div>
+
+      <!-- ABA: PRODUTOS DO ECOSSISTEMA -->
+      <div id="tabela-eco" style="display:none">
+        <div class="card"><div class="card-head">Produtos do Ecossistema FNW · Pré-Fase e Ferramentas Integradas</div><div class="card-body">
+          <div class="hl">Estes produtos operam de forma independente <strong>e</strong> como pontos de entrada para o 9PMO. Cada um é consultoria standalone ou parte do pacote completo.</div>
+          <div class="tw"><table>
+            <tr>
+              <th style="width:14%">Produto</th>
+              <th style="width:10%">Fase PMO</th>
+              <th style="width:10%">Tier</th>
+              <th style="width:30%">Descrição</th>
+              <th style="width:22%">Monetização</th>
+              <th style="width:14%">Valor Percebido</th>
+            </tr>
+            <tr>
+              <td><strong>LST</strong><br><small style="color:#888">PUV Score LST</small></td>
+              <td><span class="pill p-blue">Pré-Fase 1</span></td>
+              <td><span class="pill p-amber">LTi → MTi</span></td>
+              <td>Lead Score Tracked — app HTML/JS com quiz interativo, captura de lead, score de qualificação e roteamento automático via WhatsApp para parceiro regional</td>
+              <td><strong>Setup</strong> (implantação) + <strong>Implementação</strong> (personalização) + <strong>Recorrência</strong> (manutenção mensal)</td>
+              <td>Prospecção qualificada + automação de triagem</td>
+            </tr>
+            <tr>
+              <td><strong>PUV Score</strong></td>
+              <td><span class="pill p-blue">1</span> <span class="pill p-blue">4</span></td>
+              <td><span class="pill p-purple">MID-MID</span></td>
+              <td>Diagnóstico completo de posicionamento e proposta de valor — identifica persona, mensagem central, objeções e diferenciais competitivos</td>
+              <td><strong>Diagnóstico pago</strong> (avulso, MID-MID) / Incluso na Fase 1 e revisitado na Fase 4</td>
+              <td>Clareza de posicionamento + mensagem que converte</td>
+            </tr>
+            <tr>
+              <td><strong>SEQLIST</strong></td>
+              <td><span class="pill p-amber">5</span></td>
+              <td><span class="pill p-blue">Free → MTi</span></td>
+              <td>Construtor de sequências e processos de negócio — free forever para uso individual; conversão por dor de limitação (dados, colaboração, escala)</td>
+              <td><strong>Free</strong> (sempre) / <strong>Treino</strong> (sessão paga) / <strong>Curso</strong> vendido dentro do próprio SEQLIST</td>
+              <td>Clareza de funil + estrutura de recorrência</td>
+            </tr>
+            <tr>
+              <td><strong>REV Builder</strong><br><small style="color:#888">Construtor de Receita Previsível</small></td>
+              <td><span class="pill p-amber">5</span> <span class="pill p-amber">6</span></td>
+              <td><span class="pill p-purple">HTi</span></td>
+              <td>Dois apps integrados no GERiAH Ações: <strong>Business Plan</strong> (portfólio + meta de crescimento + receita máxima) + <strong>Receita Previsível</strong> (value ladder por tier + projeção de recorrência)</td>
+              <td>Dentro das Fases 5–6 (incluso) / Standalone como consultoria HTi / LP de sinergia com PUV Score</td>
+              <td>Modelagem financeira da esteira + clareza de escala</td>
+            </tr>
+          </table></div>
+        </div></div>
+
+        <div class="card"><div class="card-head">Pontos de Entrada e Conversão · Como cada produto converte</div><div class="card-body">
+          <div class="tw"><table>
+            <tr><th>Produto</th><th>Entrada</th><th>Gatilho de conversão</th><th>Próximo passo no 9PMO</th></tr>
+            <tr>
+              <td><strong>LST</strong></td>
+              <td>Score baixo = lead qualificado → WhatsApp FNW</td>
+              <td>Dor identificada no quiz → urgência de diagnóstico</td>
+              <td>Fase 1 — Objetivo (PUV completo)</td>
+            </tr>
+            <tr>
+              <td><strong>PUV Score</strong></td>
+              <td>Diagnóstico pago avulso ou incluso na Fase 1</td>
+              <td>Confusão de mensagem → necessidade de clareza de posicionamento</td>
+              <td>Fase 4 — Crescimento (posicionamento + BMC)</td>
+            </tr>
+            <tr>
+              <td><strong>SEQLIST</strong></td>
+              <td>Free forever → perda de dados / limite de colaboração</td>
+              <td>Limitação funcional → upgrade pago (treino ou curso)</td>
+              <td>Fase 5 — Recorrência (funil completo)</td>
+            </tr>
+            <tr>
+              <td><strong>REV Builder</strong></td>
+              <td>Consultoria standalone ou via GERiAH Ações</td>
+              <td>Visibilidade financeira da esteira → clareza de escala</td>
+              <td>Fase 6 — Escala (MAP + ROI)</td>
+            </tr>
+          </table></div>
+          <div class="hl amber" style="margin-top:.75rem"><strong>Lembrete:</strong> LST + SEQLIST são pontos de entrada free/low-ticket que qualificam e amadurecem o lead para os HTi do 9PMO. REV Builder é o argumento financeiro que fecha a Fase 10.</div>
         </div></div>
       </div>
 
@@ -916,6 +1000,7 @@ select{resize:none;cursor:pointer;-webkit-appearance:none;background-image:url("
           </div>
         </div></div>
       </div>
+    </div><!-- /panel-fnw-contrato -->
 
     <div class="panel" id="panel-fnw-revisao">
       <div class="doc-hdr"><div class="doc-eyebrow">FNW · Global</div><div class="doc-title">Revisão</div><div class="doc-meta">Revisões trimestrais · Ajustes · Histórico</div></div>
@@ -924,6 +1009,55 @@ select{resize:none;cursor:pointer;-webkit-appearance:none;background-image:url("
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
           <div class="blank-title">Nenhuma revisão ainda</div>
           <div class="blank-sub">Primeira revisão ao final do 3º mês</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- FERRAMENTAS FNW -->
+    <div class="panel" id="panel-fnw-links">
+      <div class="doc-hdr">
+        <div class="doc-eyebrow">FNW · Global</div>
+        <div class="doc-title">Ferramentas FNW</div>
+        <div class="doc-meta">Plataforma · Diagnóstico · Produção · Recorrência</div>
+      </div>
+
+      <!-- PLATAFORMA -->
+      <div class="card"><div class="card-head">Plataforma</div><div class="card-body">
+        <div class="link-item" onclick="abrirUrl('https://rolefy-neon.vercel.app/app/dashboard')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">Rolefy · GERiAH <span style="font-weight:400;color:#888">(pago · auth)</span></span><span class="link-ext">↗</span>
+        </div>
+        <div class="link-item" onclick="abrirUrl('https://geriah-suite.vercel.app')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">GERiAH Standalone <span style="font-weight:400;color:#888">(free · localStorage)</span></span><span class="link-ext">↗</span>
+        </div>
+      </div></div>
+
+      <!-- DIAGNÓSTICO -->
+      <div class="card"><div class="card-head">Diagnóstico e Posicionamento</div><div class="card-body">
+        <div class="link-item" onclick="abrirUrl('../PUV SCORE CLD/PUVSCORE1_2_4.html')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#534AB7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">PUV Score <span style="font-weight:400;color:#888">(Fases 1+4 · MID-MID)</span></span><span class="link-ext">↗</span>
+        </div>
+        <div class="link-item" onclick="abrirUrl('../PUV ScoreLST/PUV-FNW-LST-20260523-v3.0.html')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">LST · Template Base v3.0 <span style="font-weight:400;color:#888">(Pré-Fase 1)</span></span><span class="link-ext">↗</span>
+        </div>
+      </div></div>
+
+      <!-- RECORRÊNCIA E ESCALA -->
+      <div class="card"><div class="card-head">Recorrência e Escala</div><div class="card-body">
+        <div class="link-item" onclick="abrirUrl('../SEQLIST_orig/assessoria-hub.html')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">SEQLIST <span style="font-weight:400;color:#888">(Fase 5 · Free → MTi)</span></span><span class="link-ext">↗</span>
+        </div>
+        <div class="link-item" onclick="abrirUrl('../EsteiraDigital_REVBuider/EsteiraDigital_Plano/Esteira_Plano_index.html')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c17c3c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">REV Builder · Business Plan <span style="font-weight:400;color:#888">(Fase 5)</span></span><span class="link-ext">↗</span>
+        </div>
+        <div class="link-item" onclick="abrirUrl('../EsteiraDigital_REVBuider/EsteiraDigital_produtos/EsteiraDigital_Construtor.index.html')" style="padding:.5rem .25rem">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c17c3c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          <span class="link-label">REV Builder · Receita Previsível <span style="font-weight:400;color:#888">(Fase 5+6)</span></span><span class="link-ext">↗</span>
         </div>
       </div></div>
     </div>
@@ -1093,7 +1227,7 @@ var LINKS_BIOTQ=[
   {nome:'NotebookLM',url:'https://notebooklm.google.com/notebook/81280860-8c07-4ab3-9542-228f274c32df',icon:'1a73e8'},
   {nome:'Claude.ai',url:'https://claude.ai/chat/22ceb44d-9c74-4464-bb27-5cf45775e172',icon:'c17c3c'},
 ];
-var LINKS_PADRAO=[]; // novo cliente começa vazio
+var LINKS_PADRAO=[]; // links específicos do cliente — ferramentas FNW estão em FNW · Ferramentas
 
 function getLinks(cid){
   if(!linksState[cid]){
@@ -3852,7 +3986,7 @@ function cpLimpar(){
   document.getElementById('cp-texto-card').style.display='none';
 }
 function showTabela(aba){
-  ['9pmo','equil','gatilhos','script'].forEach(function(a){
+  ['9pmo','equil','gatilhos','script','eco'].forEach(function(a){
     var el=document.getElementById('tabela-'+a);
     var btn=document.getElementById('tab-'+a+'-btn');
     if(el)el.style.display=a===aba?'block':'none';
@@ -3984,7 +4118,7 @@ document.getElementById('search-input').addEventListener('keydown',function(e){i
 var menuIndex=[];
 function buildMenuIndex(){
   menuIndex=[];
-  [{id:'fnw-tabela',label:'Tabela de Serviços',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-proposta',label:'Proposta',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-contrato',label:'Contrato',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-revisao',label:'Revisão',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'configs',label:'Configurações',section:'Sistema',color:'#555',accKey:null}].forEach(function(it){menuIndex.push(it)});
+  [{id:'fnw-tabela',label:'Tabela de Serviços',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-proposta',label:'Proposta',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-contrato',label:'Contrato',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-revisao',label:'Revisão',section:'FNW',color:'#1a3a5c',accKey:'fnw'},{id:'fnw-links',label:'Ferramentas FNW',section:'FNW',color:'#185FA5',accKey:'fnw'},{id:'configs',label:'Configurações',section:'Sistema',color:'#555',accKey:null}].forEach(function(it){menuIndex.push(it)});
   var secs=templateSecoes(clienteAtivo);
   secs.forEach(function(sec){
     if(sec.items)sec.items.forEach(function(it){
